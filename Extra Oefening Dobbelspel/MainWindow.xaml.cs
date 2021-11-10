@@ -30,26 +30,33 @@ namespace Extra_Oefening_Dobbelspel
         public bool rad1Check;
         public bool rad2Check;
         public bool rad3Check;
-        public string winnaar = "";
+        public string titelSpel;
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Title = $"Dobbelspel";
+            Title = $"{titelSpel}";
             LblTijd.Content = $"{DateTime.Now.ToLongDateString()}" + "  " + $"{ DateTime.Now.ToLongTimeString()}";
         }
 
 
         private void InitSpel()
         {
+            Title = $"{titelSpel}";
             playerScore = 0;
             computerScore = 0;
+            titelSpel = "Dobbelspel";
             BtnDobbelen.Content = "Dobbelen";
+            BtnDobbelen.IsEnabled = false;
+            TxtResultaat.Background = Brushes.Gray;
             TxtComputer.Clear();
             TxtPlayer.Clear();
             TxtResultaat.Clear();
             LblComputer.Content = "";
             LblPlayer.Content = "";
-            winnaar = string.Empty;
+            ImgVuist.Visibility = Visibility.Hidden;
+            ImgWijsVinger_Links.Visibility = Visibility.Hidden;
+            ImgWijsVinger_Rechts.Visibility = Visibility.Hidden;
+            LblGameType.Content = "";
         }
 
         private void DobbelenRnd()
@@ -92,6 +99,20 @@ namespace Extra_Oefening_Dobbelspel
             LblComputer.Content = $"{computerScore} keer gewonnen";
         }
 
+        public void MessageEnd(string winnaar)
+        {
+            var selectOK = MessageBox.Show($"De winnaar is de {winnaar}", "DE WINNAAR", MessageBoxButton.OK);
+            if (selectOK == MessageBoxResult.OK)
+            {
+                Rad1.IsChecked = false;
+                Rad2.IsChecked = false;
+                Rad2.IsChecked = false;
+                BtnDobbelen.IsEnabled = false;
+                LblGameType.Content = "";
+                InitSpel();
+            }
+        }
+
         private void BtnDobbelen_Click(object sender, RoutedEventArgs e)
         {
             Button sndr = (Button)sender;
@@ -106,16 +127,14 @@ namespace Extra_Oefening_Dobbelspel
                             rad1Check = false;
                             TxtResultaat.Text = "Player wint";
                             BtnDobbelen.Content = "Eind spel";
-                            winnaar = "player";                                                         
-                            MessageBox.Show($"De winnaar is de {winnaar}", "DE WINNAAR");
+                            MessageEnd("Player");
                         }
                         else if (computerScore == 5)
                         {
                             rad1Check = false;
-                            TxtResultaat.Text = "Computer wint";                          
+                            TxtResultaat.Text = "Computer wint";
                             BtnDobbelen.Content = "Eind spel";
-                            winnaar = "computer";                         
-                            MessageBox.Show($"De winnaar is de {winnaar}", "DE WINNAAR");
+                            MessageEnd("Computer");
                         }
                     }   
                     if (rad2Check)
@@ -127,7 +146,7 @@ namespace Extra_Oefening_Dobbelspel
                             TxtResultaat.Text = "Player wint";
                             TxtResultaat.Background = Brushes.Green;
                             BtnDobbelen.Content = "Eind spel";
-                            MessageBox.Show($"De winnaar is de {winnaar}", "DE WINNAAR");
+                            MessageEnd("Player");
                         }
                         else if (computerScore == 10)
                         {
@@ -135,7 +154,7 @@ namespace Extra_Oefening_Dobbelspel
                             TxtResultaat.Text = "Computer wint";
                             TxtResultaat.Background = Brushes.Red;
                             BtnDobbelen.Content = "Eind spel";
-                            MessageBox.Show($"De winnaar is de {winnaar}", "DE WINNAAR");
+                            MessageEnd("Computer");
                         }
                     }
                     if (rad3Check)
@@ -147,7 +166,7 @@ namespace Extra_Oefening_Dobbelspel
                             TxtResultaat.Text = "Player wint";
                             TxtResultaat.Background = Brushes.Green;
                             BtnDobbelen.Content = "Eind spel";
-                            MessageBox.Show($"De winnaar is de {winnaar}", "DE WINNAAR");
+                            MessageEnd("Player");
 
                         }
                         else if (computerScore == 15)
@@ -156,7 +175,7 @@ namespace Extra_Oefening_Dobbelspel
                             TxtResultaat.Text = "Computer wint";
                             TxtResultaat.Background = Brushes.Red;
                             BtnDobbelen.Content = "Eind spel";
-                            MessageBox.Show($"De winnaar is de {winnaar}", "DE WINNAAR");
+                            MessageEnd("Computer");
                         }
                     }
                     break;
@@ -175,29 +194,35 @@ namespace Extra_Oefening_Dobbelspel
         
         public void Rad1_Checked(object sender, RoutedEventArgs e)
         {
+            titelSpel = "Eerste van 5 wint";
             InitSpel();
             rad1Check = true;
             rad2Check = false;
             rad3Check = false;
             BtnDobbelen.IsEnabled = true;
+            LblGameType.Content = "Eerste van 5 wint";
         }
 
         private void Rad2_Checked(object sender, RoutedEventArgs e)
         {
+            titelSpel = "Eerste van 10 wint";
             InitSpel();
             rad1Check = false;
             rad2Check = true;
             rad3Check = false;
             BtnDobbelen.IsEnabled = true;
+            LblGameType.Content = "Eerste van 10 wint";
         }
 
         private void Rad3_Checked(object sender, RoutedEventArgs e)
         {
+            titelSpel = "Eerste van 15 wint";
             InitSpel();
             rad1Check = false;
             rad2Check = false;
             rad3Check = true;
             BtnDobbelen.IsEnabled = true;
+            LblGameType.Content = "Eerste van 15 wint";
         }
     }
 }

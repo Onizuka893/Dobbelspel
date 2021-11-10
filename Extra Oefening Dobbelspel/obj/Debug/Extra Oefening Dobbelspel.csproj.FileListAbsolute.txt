@@ -43,3 +43,18 @@ C:\Users\Yassine Amzil\source\repos\Dobbelspel V3.0\Extra Oefening Dobbelspel\ob
 C:\Users\Yassine Amzil\source\repos\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra Oefening Dobbelspel.csproj.CoreCompileInputs.cache
 C:\Users\Yassine Amzil\source\repos\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra Oefening Dobbelspel.exe
 C:\Users\Yassine Amzil\source\repos\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra Oefening Dobbelspel.pdb
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\bin\Debug\Extra Oefening Dobbelspel.exe.config
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\bin\Debug\Extra Oefening Dobbelspel.exe
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\bin\Debug\Extra Oefening Dobbelspel.pdb
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra Oefening Dobbelspel.csproj.AssemblyReference.cache
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\MainWindow.g.cs
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\App.g.cs
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra Oefening Dobbelspel_MarkupCompile.cache
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra Oefening Dobbelspel_MarkupCompile.lref
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\MainWindow.baml
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra Oefening Dobbelspel.g.resources
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra_Oefening_Dobbelspel.Properties.Resources.resources
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra Oefening Dobbelspel.csproj.GenerateResource.cache
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra Oefening Dobbelspel.csproj.CoreCompileInputs.cache
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra Oefening Dobbelspel.exe
+D:\OefeningenC#essentials\Dobbelspel Github\Dobbelspel V3.0\Extra Oefening Dobbelspel\obj\Debug\Extra Oefening Dobbelspel.pdb
